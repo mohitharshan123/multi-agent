@@ -17,8 +17,8 @@ services:
     dockerContext: ./frontend
     dockerBuildArgs:
       - key: VITE_API_BASE_URL
-        value: https://multi-agent-vvuk.onrender.com/
+        value: https://multi-agent-vvuk.onrender.com
     envVars:
       - key: VITE_API_BASE_URL
-        value: https://multi-agent-vvuk.onrender.com/
+        value: https://multi-agent-vvuk.onrender.com
     autoDeploy: false 

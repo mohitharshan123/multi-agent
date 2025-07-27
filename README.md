@@ -11,6 +11,12 @@ A multi-agent chatbot system designed to solve real estate-related issues throug
 - **Agent 1:** Issue Detection & Troubleshooting Agent (Image + Text)
 - **Agent 2:** Tenancy FAQ Agent (Text-based)
 
+## 🚀 Live Deployment
+
+**Try the application now:** [https://multi-agent-vvuk.onrender.com/](https://multi-agent-vvuk.onrender.com/)
+
+The Multi-Agent Real Estate Assistant is deployed and ready to use! Upload property images or ask tenancy questions to see the intelligent agent routing in action.
+
 ## Technologies Used
 
 - **Backend:** FastAPI with LangChain + LangGraph
@@ -73,6 +79,12 @@ docker-compose up -d --build
 ```
 
 #### Access the Application
+
+**🌐 Live Deployment**
+- **Live Application**: [https://multi-agent-vvuk.onrender.com/](https://multi-agent-vvuk.onrender.com/)
+
+
+**🏠 Local Development**
 - **Frontend**: `http://localhost:3000`
 - **Backend API**: `http://localhost:8000`
 - **API Documentation**: `http://localhost:8000/docs`
@@ -323,6 +335,13 @@ The application now provides:
 - **Streaming Support**: Real-time response streaming
 
 #### **API Endpoints:**
+
+**Live Deployment:**
+- **Main Application**: [https://multi-agent-vvuk.onrender.com/](https://multi-agent-vvuk.onrender.com/)
+- **API Documentation**: [https://multi-agent-vvuk.onrender.com/docs](https://multi-agent-vvuk.onrender.com/docs)
+- **Health Check**: [https://multi-agent-vvuk.onrender.com/api/health](https://multi-agent-vvuk.onrender.com/api/health)
+
+**Local Development:**
 - **Main Application**: `http://localhost:3000`
 - **API Documentation**: `http://localhost:8000/docs`
 - **Health Check**: `http://localhost:8000/api/health`
