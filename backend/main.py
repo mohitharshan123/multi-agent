@@ -21,7 +21,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000", 
         "http://localhost:5173",
-        "https://multi-agent-frontend.onrender.com"
+        "https://multi-agent-vvuk.onrender.com"
     ],
     allow_credentials=True,
     allow_methods=["*"],

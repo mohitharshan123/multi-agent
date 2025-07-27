@@ -1,9 +1,9 @@
 services:
   - type: web
     name: multi-agent-backend
-    runtime: python
-    buildCommand: cd backend && pip install -r requirements.txt
-    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
     envVars:
       - key: OPENAI_API_KEY
         sync: false
@@ -12,10 +12,13 @@ services:
 
   - type: web
     name: multi-agent-frontend
-    runtime: node
-    buildCommand: cd frontend && npm ci && npm run build
-    staticPublishPath: ./frontend/dist
+    runtime: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    dockerBuildArgs:
+      - key: VITE_API_BASE_URL
+        value: https://multi-agent-vvuk.onrender.com/
     envVars:
       - key: VITE_API_BASE_URL
-        value: https://multi-agent-backend.onrender.com
+        value: https://multi-agent-vvuk.onrender.com/
     autoDeploy: false 
